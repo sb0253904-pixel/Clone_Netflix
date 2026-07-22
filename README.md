@@ -72,7 +72,7 @@ net/
 
 1. **Clone or Download the Repository**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/HARISHKAMIREDDI/netflix_clone>
    cd net
    ```
 
