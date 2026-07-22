@@ -1,0 +1,298 @@
+:root {
+  --primary-red: #e50914;
+  --dark-bg: #000000;
+  --card-bg: #141414;
+  --border-color: #222222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dark-bg);
+  color: #ffffff;
+  line-height: 1.6;
+}
+.sticky{
+    background: linear-gradient(to right, rgba(173, 3, 252, 0.7), rgba(187, 0, 0, 0.9));
+    text-align:center;
+    box-sizing: content-box;
+    width:100vw;
+    position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    font-weight: bold;
+    height: 30px;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+   url(./netflix_bg.jpg) center/cover no-repeat;
+  border-bottom: 8px solid var(--border-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.lang {
+  margin-right: 12px;
+}
+
+#langs {
+  width: 90px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px;
+  background: grey;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo {
+  color: var(--primary-red);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.signin {
+  background: var(--primary-red);
+  color: white;
+  text-decoration: none;
+  width: 110px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.tag {
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #dcdcdc;
+}
+
+.hero-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-form input {
+  width: 360px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero-form button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary-red);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.try{
+  height:40px;
+  width:150px;
+  background: var(--primary-red);
+  color: white;
+  font-size: 1rem;  
+  margin:0;
+  padding:0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+}
+.new_mem{
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.trending{
+  background: linear-gradient(to right, rgba(173, 3, 252, 0.7), rgba(187, 0, 0, 0.9));
+  text-align:center;
+  box-sizing: content-box;
+  width:100vw;
+  height:30px;
+}
+main {
+  background: var(--dark-bg);
+}
+
+.feature,
+.feature-grid,
+.faq {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  border-bottom: 8px solid var(--border-color);
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.feature.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.feature.reverse .feature-text {
+  order: 2;
+}
+
+.feature h2 {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+}
+
+.feature p,
+.card p,
+.faq-list li {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.feature-media {
+  min-height: 300px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #222, #111);
+  position: relative;
+  overflow: hidden;
+}
+
+.media-tv::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2e2e2e, #111);
+}
+
+.media-download::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 220px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f2f2f2, #b8b8b8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.faq {
+  text-align: center;
+}
+
+.faq-list {
+  list-style: none;
+  margin: 30px 0;
+  display: grid;
+  gap: 10px;
+}
+
+.faq-list li {
+  background: #303030;
+  padding: 20px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 25px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .feature,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature.reverse .feature-text {
+    order: 0;
+  }
+
+  .hero-form input {
+    width: 100%;
+  }
+}
